@@ -1,0 +1,83 @@
+body {
+   /*height: 100%;*/
+   background-color: rgb(61, 75, 105);
+   padding: 0;
+   margin: 0;
+   color: white;
+}
+
+a {
+    color: white;
+}
+
+header {
+    padding: 1% 25px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.2rem; 
+    text-transform: uppercase;   
+    /*margin: 5px;*/
+    padding: 8px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+}
+
+nav a.active, nav a:hover {
+    background-color: rgb(20, 80, 182);
+}
+
+section#me {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#me ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+section#me ul li a {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #ff4b54;
+    border: 2px solid #ff4b54;
+    transition: background 2s ease;
+}
+
+section#me ul li a:hover {
+    background-color: transparent;
+}
+
+section#me div#avatar {
+    width: 180px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#me div#avatar img {
+    width: 250px;
+}
+
+section, div.section {
+    height: 100vh;
+    /*background-color: cornflowerblue;*/
+}
